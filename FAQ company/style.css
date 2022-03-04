@@ -63,5 +63,8 @@ h1 {
 
 img {
     width: 80% !important;
-    margin-top: 5px !important;
+}
+
+p {
+    margin-bottom: 0em !important;
 }
