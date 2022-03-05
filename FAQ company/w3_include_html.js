@@ -25,3 +25,9 @@ function includeHTML() {
         }
     }
 }
+
+$(function() {
+    if( location.pathname == '/join_member.html') { 
+        $('#nav-link').addClass('active'); 
+    };
+  });
