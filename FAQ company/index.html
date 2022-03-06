@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Tw">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/77dcd19008.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>帳號停權禁用FAQ</title>
+
+    <title>會員常見問題FAQ</title>
 </head>
 
 <body class="mx-auto" style="width:auto;">
@@ -22,7 +23,11 @@
 
         <div class="row d-md-flex flex-md-equal text-center">
 
+            <div w3-include-html="join_member_contain.html"></div>
+            <div w3-include-html="award_contain.html"></div>
             <div w3-include-html="Ban_contain.html"></div>
+
+
             <div>
                 <img src="FAQ.png" class="rounded mx-auto d-block">
             </div>
@@ -37,8 +42,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="w3_include_html.js"></script>
     <script>
-        includeHTML()
+        includeHTML();
     </script>
 </body>
+
 
 </html>

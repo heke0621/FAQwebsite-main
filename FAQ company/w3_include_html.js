@@ -1,3 +1,19 @@
+$(document).ready(function() {
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('a');
+    const menuLenght = menuItem.length;
+    for (let i = 0; i < menuLenght; i++) {
+        if (location.pathname != '/FAQ%20company/index.html') {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].className = "nav-link active"
+                console.log(menuItem[i].href)
+            }
+        }
+    }
+
+})
+
+
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
@@ -26,7 +42,7 @@ function includeHTML() {
     }
 }
 
-const url = 'https://gosubarpublic.blob.core.windows.net/static/2021/12/13/1815/upload/171345_dfdfdf3e-11f8-49be-a695-689bb879d8ca.pdf'
+let url = document.getElementById("pdf-url").textContent
 let pdfDoc = null,
     pageNum = 1,
     pageIsRendering = false,
@@ -102,11 +118,3 @@ pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
 //PDF瀏覽器按鈕事件
 document.querySelector('#prev-page').addEventListener('click', showPrevPage);
 document.querySelector('#next-page').addEventListener('click', showNextPage);
-
-$(function() {
-    if (location.pathname == '/FAQ%20company/join_member.html') {
-        $('#1').addClass('active');
-    } else if (location.pathname == '/FAQ%20company/award.html') {
-        $('#2').addClass('active');
-    }
-});
