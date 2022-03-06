@@ -68,3 +68,19 @@ img {
 p {
     margin-bottom: 0em !important;
 }
+
+.top-bar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.page-info {
+    margin-left: 1rem;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 1rem;
+}
