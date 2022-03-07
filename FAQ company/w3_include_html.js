@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('a');
     const menuLenght = menuItem.length;
@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
     }
 
-})
+}) */
 
 
 function includeHTML() {
