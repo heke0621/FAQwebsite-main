@@ -31,6 +31,10 @@ h1 {
     /* margin-left: 1rem; */
 }
 
+.accordion-button > p{
+    padding-right: 18px !important;
+}
+
 .accordion-body {
     background: rgba(192, 216, 192, 0.38);
 }
